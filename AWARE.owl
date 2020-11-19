@@ -6,7 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE"/>
     
 
 
@@ -21,77 +21,77 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#isLiftedBy -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#hasDecision -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#isLiftedBy">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2020/0/AWARE#lifts"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#isLocatedIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#isLocatedIn">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#isPulledBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#isPulledBy">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2020/0/AWARE#pulls"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#lifts -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#lifts"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#pulls -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#pulls"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#hasDecision -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#hasDecision">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#hasDecision">
         <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Decision"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Decision"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#hasPosition -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#hasPosition -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#hasPosition"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#hasPosition"/>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#hasTimeStamp -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#hasTimeStamp -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#hasTimeStamp">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#hasTimeStamp">
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#hasValue -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#hasValue -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#hasValue">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#hasValue">
         <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2020/0/AWARE#position"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#position"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#isLiftedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#isLiftedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#lifts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#isLocatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#isPulledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#isPulledBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#pulls"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#lifts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#lifts"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#pulls -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#pulls"/>
     
 
 
@@ -115,7 +115,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hosts">
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/isHostedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#AGV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#AGV"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     </owl:ObjectProperty>
     
@@ -130,7 +130,7 @@
     <!-- http://www.w3.org/ns/sosa/isHostedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isHostedBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#STR"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#STR"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     </owl:ObjectProperty>
     
@@ -188,7 +188,7 @@
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/implementedBy">
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/implements"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#STR"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#STR"/>
     </owl:ObjectProperty>
     
 
@@ -196,7 +196,7 @@
     <!-- http://www.w3.org/ns/ssn/implements -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/implements">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#STR"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#STR"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
     </owl:ObjectProperty>
     
@@ -221,65 +221,65 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#X -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#X -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#X">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/0/AWARE#position"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#X">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#position"/>
         <rdfs:comment>AGV&apos;s X-position on the map in reference to the world coordinate system.</rdfs:comment>
         <rdfs:label>AWARE:X</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#Y -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Y -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#Y">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/0/AWARE#position"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Y">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#position"/>
         <rdfs:comment>AGV&apos;s X-position on the map in reference to the world coordinate system.</rdfs:comment>
         <rdfs:label>AWARE:Y</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#actionDescription -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#actionDescription -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#actionDescription">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#actionDescription">
         <rdfs:comment>Additional information on the action performed.</rdfs:comment>
         <rdfs:label>AWARE:actionDescription</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#actionId -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#actionId -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#actionId">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#actionId">
         <rdfs:comment>Unique  action  identification  consisting  of  the  actionName  and  apostfix starting with ”_”.</rdfs:comment>
         <rdfs:label>AWARE:actionId</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#actionName -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#actionName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#actionName">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#actionName">
         <rdfs:comment>Name of action.</rdfs:comment>
         <rdfs:label>AWARE:actionName</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#actionStatus -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#actionStatus -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#actionStatus">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#actionStatus">
         <rdfs:comment>﻿{waiting; initializing; running; finished;failed}</rdfs:comment>
         <rdfs:label>AWARE:actionStatus</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#batteryCharge -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#batteryCharge -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#batteryCharge">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#batteryCharge">
         <rdfs:comment>State of charge: 
 This property holds the percentage of the battery capacity that remains available.</rdfs:comment>
         <rdfs:label>AWARE:batteryCharge</rdfs:label>
@@ -287,73 +287,73 @@ This property holds the percentage of the battery capacity that remains availabl
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#batteryHealth -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#batteryHealth -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#batteryHealth">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#batteryHealth">
         <rdfs:comment>State of Health %.</rdfs:comment>
         <rdfs:label>AWARE:batteryHealth</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#batteryVoltage -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#batteryVoltage -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#batteryVoltage">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#batteryVoltage">
         <rdfs:comment>Battery voltage in V.</rdfs:comment>
         <rdfs:label>AWARE:batteryVoltage</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#boundingBoxReference -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#boundingBoxReference -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#boundingBoxReference">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#boundingBoxReference">
         <rdfs:comment>Point of reference for the location of the bounding box. The point of reference is always the center of the bounding box’s bottom surface (at height = 0) and is described in coordinates of the AGV’s coordinate system.</rdfs:comment>
         <rdfs:label>AWARE:boundingBoxReference</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#dimentions -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#dimentions -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#dimentions">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#dimentions">
         <rdfs:comment>Dimensions of the bounding box in meters.</rdfs:comment>
         <rdfs:label>AWARE:dimentions</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#distance -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#distance -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#distance">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#distance">
         <rdfs:comment>Distance of an object to the sensor that measured the distance.</rdfs:comment>
         <rdfs:label>AWARE:distance</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#errorDescription -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#errorDescription -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#errorDescription">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#errorDescription">
         <rdfs:comment>Error description.</rdfs:comment>
         <rdfs:label>AWARE:errorDescription</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#errorType -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#errorType -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#errorType">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#errorType">
         <rdfs:comment>Type / name of error.</rdfs:comment>
         <rdfs:label>AWARE:errorType</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#height -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#height -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#height">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/0/AWARE#dimentions"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#height">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#dimentions"/>
         <rdfs:comment>Absolute height of the bounding box.
 Optional:
 Set value only if known</rdfs:comment>
@@ -362,9 +362,9 @@ Set value only if known</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#isCharging -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#isCharging -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#isCharging">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#isCharging">
         <rdfs:comment>This property indicates whether the battery is currently being charged or not
 
 True: charging in progress
@@ -374,9 +374,9 @@ False: AGVis currently not charging</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#isLoaded -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#isLoaded -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#isLoaded">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#isLoaded">
         <rdfs:comment>True: agv is loaded
 False: agv is not loaded</rdfs:comment>
         <rdfs:label>AWARE:isLoaded</rdfs:label>
@@ -384,96 +384,96 @@ False: agv is not loaded</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#length -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#length -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#length">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/0/AWARE#dimentions"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#length">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#dimentions"/>
         <rdfs:comment>Absolute length of the bounding box.</rdfs:comment>
         <rdfs:label>AWARE:length</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#plantName -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#plantName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#plantName">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#plantName">
         <rdfs:comment>Name of the industrial/manufacturing plant.</rdfs:comment>
         <rdfs:label>AWARE:plantName</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#position -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#position -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#position">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#position">
         <rdfs:comment>Position of the AGV.</rdfs:comment>
         <rdfs:label>AWARE:position</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#reach -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#reach -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#reach">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#reach">
         <rdfs:comment>Estimated reach in meter with current State of Charge.</rdfs:comment>
         <rdfs:label>AWARE:reach</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#serialNumber -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#serialNumber -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#serialNumber">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#serialNumber">
         <rdfs:comment>Serial number of a device: AGV, sensor...</rdfs:comment>
         <rdfs:label>AWARE:serialNumber</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#theta -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#theta -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#theta">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/0/AWARE#position"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#theta">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#position"/>
         <rdfs:comment>Orientation of the AGV.</rdfs:comment>
         <rdfs:label>AWARE:theta</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#width -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#width -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#width">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/0/AWARE#dimentions"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#width">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#dimentions"/>
         <rdfs:comment>Absolute width of the bounding box.</rdfs:comment>
         <rdfs:label>AWARE:width</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#x -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#x -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#x">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/0/AWARE#boundingBoxReference"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#x">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#boundingBoxReference"/>
         <rdfs:comment>x-coordinate of the point of reference.</rdfs:comment>
         <rdfs:label>AWARE:x</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#y -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#y -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#y">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/0/AWARE#boundingBoxReference"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#y">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#boundingBoxReference"/>
         <rdfs:comment>y-coordinate of the point of reference.</rdfs:comment>
         <rdfs:label>AWARE:y</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#z -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#z -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#z">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/0/AWARE#boundingBoxReference"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#z">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#boundingBoxReference"/>
         <rdfs:comment>z-coordinate of the point of reference.</rdfs:comment>
         <rdfs:label>AWARE:z</rdfs:label>
     </owl:DatatypeProperty>
@@ -610,29 +610,19 @@ False: agv is not loaded</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/0/AWARE#BoundingBox -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#AGV -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/0/AWARE#BoundingBox">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:comment>The bounding box of an element detected by a vision model.</rdfs:comment>
-        <rdfs:label>AWARE:BoundingBox</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#AGV -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#AGV">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Vehicle"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#AGV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Vehicle"/>
         <rdfs:comment>An automatic guided vehicle (AGV) is a portable robot that follows along marked long lines or wires on the floor, or uses radio waves, vision cameras, magnets, or lasers for navigation. They are most often used in industrial applications to transport heavy materials around a large industrial building, such as a factory or warehouse.</rdfs:comment>
         <rdfs:label>AWARE:AGV</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#AGVdirection -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#AGVdirection -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#AGVdirection">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#AGVdirection">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment>The direction of an AGV on a crossing.</rdfs:comment>
         <rdfs:label>AWARE:AGVDirection</rdfs:label>
@@ -640,9 +630,9 @@ False: agv is not loaded</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#AGVlocation -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#AGVlocation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#AGVlocation">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#AGVlocation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment>The location in the plant. Could be a zone and/or area.</rdfs:comment>
         <rdfs:label>AWARE:AGVlocation</rdfs:label>
@@ -650,9 +640,9 @@ False: agv is not loaded</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#AGVposition -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#AGVposition -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#AGVposition">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#AGVposition">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment>The position on a map in world coordinates.</rdfs:comment>
         <rdfs:label>AWARE:AGVPosition</rdfs:label>
@@ -660,9 +650,9 @@ False: agv is not loaded</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Action -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Action -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Action">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Action">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment>The action currently being performed by the robot.</rdfs:comment>
         <rdfs:label>AWARE:Action</rdfs:label>
@@ -670,28 +660,28 @@ False: agv is not loaded</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Aisle -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Aisle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Aisle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#OperationalArea"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Aisle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#OperationalArea"/>
         <rdfs:label>AWARE:Aisle</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Axeltrailer -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Axeltrailer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Axeltrailer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Trailer"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Axeltrailer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Trailer"/>
         <rdfs:comment>Unpowered vehicle with one main axle. In most cases a series of Axletrailers is attached to a Tugger. It is designed to carry loads.</rdfs:comment>
         <rdfs:label>AWARE:Axeltrailer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#BatteryInformation -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#BatteryInformation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#BatteryInformation">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#BatteryInformation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment>All battery related information.</rdfs:comment>
         <rdfs:label>AWARE:BatteryInformation</rdfs:label>
@@ -699,99 +689,109 @@ False: agv is not loaded</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#BatterySensor -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#BatterySensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#BatterySensor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ProprioceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#BatterySensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ProprioceptiveSensor"/>
         <rdfs:comment>Reports battery information including health, charge and voltage.</rdfs:comment>
         <rdfs:label>AWARE:BatterySensor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Bearingframe -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Bearingframe -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Bearingframe">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#StorageUnit"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Bearingframe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#StorageUnit"/>
         <rdfs:comment>Storage unit with frame structure to hold parts but no side walls are visible.</rdfs:comment>
         <rdfs:label>AWARE:BearingFrame</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Bicycle -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Bicycle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Bicycle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#MannedVehicle"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Bicycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#MannedVehicle"/>
         <rdfs:comment>Any 2-wheel vehicle that does not have a motor and is not powered by gas or electric. In most instances’ Bicycles are propelled by pedals connected to the rear wheel by a chain, and having handlebars for steering and a saddle-like seat.</rdfs:comment>
         <rdfs:label>AWARE:Bicycle</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Camera -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#BoundingBox -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Camera">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ExteroceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#BoundingBox">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment>The bounding box of an element detected by a vision model.</rdfs:comment>
+        <rdfs:label>AWARE:BoundingBox</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Camera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Camera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ExteroceptiveSensor"/>
         <rdfs:comment>A sensing device for image aquisition.</rdfs:comment>
         <rdfs:label>AWARE:Camera</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#ChargingStation -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#ChargingStation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#ChargingStation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#OperationalArea"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#ChargingStation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#OperationalArea"/>
         <rdfs:comment>Area where the robot gets its battery charged.</rdfs:comment>
         <rdfs:label>AWARE:ChargingStation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Compartmentbox -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Compartmentbox -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Compartmentbox">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#StorageUnit"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Compartmentbox">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#StorageUnit"/>
         <rdfs:comment>Storage unit with horizontally and vertically separated compartments.</rdfs:comment>
         <rdfs:label>AWARE:CompartmentBox</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#ConstraintZone -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#ConstraintZone -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#ConstraintZone">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#InfrastructureRegion"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#ConstraintZone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#InfrastructureRegion"/>
         <rdfs:comment>Refers to a delimited surface of the plant where specific behavioral regulations apply.</rdfs:comment>
         <rdfs:label>AWARE:ConstraintZone</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Container -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Container -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Container">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#StorageUnit"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Container">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#StorageUnit"/>
         <rdfs:comment>Enclosed storage unit without visible compartments.</rdfs:comment>
         <rdfs:label>AWARE:Container</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#CrossingArea -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#CrossingArea -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#CrossingArea">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#OperationalArea"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#CrossingArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#OperationalArea"/>
         <rdfs:comment>The intersection of multiple lanes.</rdfs:comment>
         <rdfs:label>AWARE:CrossingArea</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Decision -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Decision -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Decision">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Decision">
         <rdfs:subClassOf rdf:resource="http://www.adampease.org/OP/SUMO.owl#Abstract"/>
         <rdfs:comment>The decision taken by the reasoner according to the actual state.</rdfs:comment>
         <rdfs:label>AWARE:Decision</rdfs:label>
@@ -799,30 +799,30 @@ False: agv is not loaded</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#DetectionModel -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#DetectionModel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#DetectionModel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#VisionModel"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#DetectionModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#VisionModel"/>
         <rdfs:comment>A vision model that can identify which of a known set of objects might be present and provide information about their positions within the image.</rdfs:comment>
         <rdfs:label>AWARE:DetectionModel</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#DirectedZone -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#DirectedZone -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#DirectedZone">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ConstraintZone"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#DirectedZone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ConstraintZone"/>
         <rdfs:comment>A directed zone sets directional costs for path planning within the zones.</rdfs:comment>
         <rdfs:label>AWARE:DirectedZone</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Dolly -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Dolly -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Dolly">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#TransportationUnit"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Dolly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#TransportationUnit"/>
         <rdfs:comment>Four-wheeled, unpowered vehicle designed to be carried by an STR or a
 E/Ttrailer.</rdfs:comment>
         <rdfs:label>AWARE:Dolly</rdfs:label>
@@ -830,29 +830,29 @@ E/Ttrailer.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#DottedLane -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#DottedLane -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#DottedLane">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Lane"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#DottedLane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Lane"/>
         <rdfs:comment>A lane with dotted lines.</rdfs:comment>
         <rdfs:label>AWARE:DottedLane</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Drop-offArea -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Drop-offArea -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Drop-offArea">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#OperationalArea"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Drop-offArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#OperationalArea"/>
         <rdfs:comment>The area where a vehicle drops off its load.</rdfs:comment>
         <rdfs:label>AWARE:Drop-offArea</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Error -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Error -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Error">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Error">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment>Error reported by the system.</rdfs:comment>
         <rdfs:label>AWARE:Error</rdfs:label>
@@ -860,10 +860,10 @@ E/Ttrailer.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Etrailer -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Etrailer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Etrailer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Trailer"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Etrailer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Trailer"/>
         <rdfs:comment>Unpowered vehicle with one main axle. In most cases a series of Etrailers is
 attached to a Tugger. It is designed to carry Dollies.</rdfs:comment>
         <rdfs:label>AWARE:Etrailer</rdfs:label>
@@ -871,9 +871,9 @@ attached to a Tugger. It is designed to carry Dollies.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#ExteroceptiveSensor -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#ExteroceptiveSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#ExteroceptiveSensor">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#ExteroceptiveSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
         <rdfs:comment>A sensor that measures a physical property coming from the robot’s environment. Example: camera.</rdfs:comment>
         <rdfs:label>AWARE:ExteroceptiveSensor</rdfs:label>
@@ -881,19 +881,19 @@ attached to a Tugger. It is designed to carry Dollies.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Forklift -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Forklift -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Forklift">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#MannedVehicle"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Forklift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#MannedVehicle"/>
         <rdfs:comment>A vehicle with a pronged device in front for lifting and carrying heavy loads.</rdfs:comment>
         <rdfs:label>AWARE:Forklift</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#FrameRate -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#FrameRate -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#FrameRate">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#FrameRate">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment>The frame rate of a camera.</rdfs:comment>
         <rdfs:label>AWARE:FrameRate</rdfs:label>
@@ -901,28 +901,28 @@ attached to a Tugger. It is designed to carry Dollies.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#FullLane -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#FullLane -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#FullLane">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Lane"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#FullLane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Lane"/>
         <rdfs:comment>A lane with full lines.</rdfs:comment>
         <rdfs:label>AWARE:FullLane</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#IMUSensor -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#IMUSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#IMUSensor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ProprioceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#IMUSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ProprioceptiveSensor"/>
         <rdfs:label>AWARE:IMUSensor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#InfrastructureRegion -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#InfrastructureRegion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#InfrastructureRegion">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#InfrastructureRegion">
         <rdfs:subClassOf rdf:resource="http://www.adampease.org/OP/SUMO.owl#Region"/>
         <rdfs:comment>The inner infrastructure of a plant.</rdfs:comment>
         <rdfs:label>AWARE:InfrastructureRegion</rdfs:label>
@@ -930,116 +930,116 @@ attached to a Tugger. It is designed to carry Dollies.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#InteractionZone -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#InteractionZone -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#InteractionZone">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ConstraintZone"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#InteractionZone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ConstraintZone"/>
         <rdfs:comment>A zone that can be accessed after an external state is checked.</rdfs:comment>
         <rdfs:label>AWARE:InteractionZone</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Lane -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Lane -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Lane">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#OperationalArea"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Lane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#OperationalArea"/>
         <rdfs:comment>Painted lines on the plant floor where the vehicles navigate.</rdfs:comment>
         <rdfs:label>AWARE:Lane</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Lidar -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Lidar -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Lidar">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ExteroceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Lidar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ExteroceptiveSensor"/>
         <rdfs:comment>A sensing device for point cloud acquisition.</rdfs:comment>
         <rdfs:label>AWARE:Lidar</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#LimitedCapacityZone -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#LimitedCapacityZone -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#LimitedCapacityZone">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ConstraintZone"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#LimitedCapacityZone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ConstraintZone"/>
         <rdfs:comment>A zone where only a limited number of vehicles can be present.</rdfs:comment>
         <rdfs:label>AWARE:LimitedCapacityZone</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#MainAisle -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#MainAisle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#MainAisle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Aisle"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#MainAisle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Aisle"/>
         <rdfs:comment>Aisle where a higher priority applies.</rdfs:comment>
         <rdfs:label>AWARE:MainAisle</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#MainContactorSensor -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#MainContactorSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#MainContactorSensor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ProprioceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#MainContactorSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ProprioceptiveSensor"/>
         <rdfs:label>AWARE:MainContactorSensor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#MannedVehicle -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#MannedVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#MannedVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Vehicle"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#MannedVehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Vehicle"/>
         <rdfs:comment>A vehicle that has at least a person in it operating its control.</rdfs:comment>
         <rdfs:label>AWARE:MannedVehicle</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#MemoryUsageSensor -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#MemoryUsageSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#MemoryUsageSensor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ProprioceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#MemoryUsageSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ProprioceptiveSensor"/>
         <rdfs:label>AWARE:MemoryUsageSensor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Meshcontainer -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Meshcontainer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Meshcontainer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#StorageUnit"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Meshcontainer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#StorageUnit"/>
         <rdfs:comment>Storage unit with purple wire mesh.</rdfs:comment>
         <rdfs:label>AWARE:Meshcontainer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#MotorPowerSensor -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#MotorPowerSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#MotorPowerSensor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ProprioceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#MotorPowerSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ProprioceptiveSensor"/>
         <rdfs:label>AWARE:MotorPowerSensor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#NoReplanningZone -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#NoReplanningZone -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#NoReplanningZone">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ConstraintZone"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#NoReplanningZone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ConstraintZone"/>
         <rdfs:comment>A zone where the vehicle is not allowed to replan its path.</rdfs:comment>
         <rdfs:label>AWARE:NoReplanningZone</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocus -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocus -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocus">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocus">
         <rdfs:subClassOf rdf:resource="http://www.adampease.org/OP/SUMO.owl#Object"/>
         <rdfs:comment>The general class of Objects within the field of focus.</rdfs:comment>
         <rdfs:label>AWARE:ObjectOfFocus</rdfs:label>
@@ -1047,50 +1047,50 @@ attached to a Tugger. It is designed to carry Dollies.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocusInFront -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocusInFront -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocusInFront">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocus"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocusInFront">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocus"/>
         <rdfs:comment>The general class of Objects in the front part within the field of focus.</rdfs:comment>
         <rdfs:label>AWARE:ObjectOfFocusInFront</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocusOnTheLeft -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocusOnTheLeft -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocusOnTheLeft">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocus"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocusOnTheLeft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocus"/>
         <rdfs:comment>The general class of Objects in the left part within the field of focus.</rdfs:comment>
         <rdfs:label>AWARE:ObjectOfFocusOnTheLeft</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocusOnTheOpposite -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocusOnTheOpposite -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocusOnTheOpposite">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocus"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocusOnTheOpposite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocus"/>
         <rdfs:comment>The general class of Objects in the opposite side to the robot (e.g. opposite lane in a crossing) within the field of focus.</rdfs:comment>
         <rdfs:label>AWARE:ObjectOfFocusOnTheOpposite</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocusOnTheRight -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocusOnTheRight -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocusOnTheRight">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ObjectOfFocus"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocusOnTheRight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ObjectOfFocus"/>
         <rdfs:comment>The general class of Objects in the right part within the field of focus.</rdfs:comment>
         <rdfs:label>AWARE:ObjectOfFocusOnTheRight</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#OperationalArea -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#OperationalArea -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#OperationalArea">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#InfrastructureRegion"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#OperationalArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#InfrastructureRegion"/>
         <rdfs:comment>A part of the plant with a specific functionality.
 An instance of operational area can also be an instrance of zone, e.g. a crossing area is a limited speed zone</rdfs:comment>
         <rdfs:label>AWARE:OperationalArea</rdfs:label>
@@ -1098,18 +1098,18 @@ An instance of operational area can also be an instrance of zone, e.g. a crossin
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#PLCsensor -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#PLCsensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#PLCsensor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ProprioceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#PLCsensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ProprioceptiveSensor"/>
         <rdfs:label>AWARE:PLCsensor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Person -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Person -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Person">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Person">
         <rdfs:subClassOf rdf:resource="http://www.adampease.org/OP/SUMO.owl#Object"/>
         <rdfs:comment>Anybody who is intuitively recognizable as a human.</rdfs:comment>
         <rdfs:label>AWARE:Person</rdfs:label>
@@ -1117,29 +1117,29 @@ An instance of operational area can also be an instrance of zone, e.g. a crossin
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Pick-upArea -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Pick-upArea -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Pick-upArea">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#OperationalArea"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Pick-upArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#OperationalArea"/>
         <rdfs:comment>The area where a vehicle picks up its load.</rdfs:comment>
         <rdfs:label>AWARE:Pick-upArea</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#PositioningSystem -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#PositioningSystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#PositioningSystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ProprioceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#PositioningSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ProprioceptiveSensor"/>
         <rdfs:comment>Reports position coordinates.</rdfs:comment>
         <rdfs:label>AWARE:PositioningSystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#ProprioceptiveSensor -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#ProprioceptiveSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#ProprioceptiveSensor">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#ProprioceptiveSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
         <rdfs:comment>A sensor that measures values internal to the system where it is hosted. Example: Battery</rdfs:comment>
         <rdfs:label>AWARE:ProprioceptiveSensor</rdfs:label>
@@ -1147,29 +1147,29 @@ An instance of operational area can also be an instrance of zone, e.g. a crossin
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#RamUsageSensor -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#RamUsageSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#RamUsageSensor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ProprioceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#RamUsageSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ProprioceptiveSensor"/>
         <rdfs:label>AWARE:RamUsageSensor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#RestrictedZone -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#RestrictedZone -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#RestrictedZone">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ConstraintZone"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#RestrictedZone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ConstraintZone"/>
         <rdfs:comment>A zone described by a polygon that the vehicle is not allowed to enter, e.g. pedestrian area.</rdfs:comment>
         <rdfs:label>AWARE:RestrictedZone</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#STR -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#STR -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#STR">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#AGV"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#STR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#AGV"/>
         <rdfs:comment>The Smart Transport Robot by BMW. An automatic guided vehicle (AGV)
 equipped to carry mobile Dollys.</rdfs:comment>
         <rdfs:label>AWARE:STR</rdfs:label>
@@ -1177,68 +1177,58 @@ equipped to carry mobile Dollys.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#SafetySwitchesSensor -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#SafetySwitchesSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#SafetySwitchesSensor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ProprioceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#SafetySwitchesSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ProprioceptiveSensor"/>
         <rdfs:label>AWARE:SafetySwitchesSensor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#SecondaryAisle -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#SecondaryAisle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#SecondaryAisle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Aisle"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#SecondaryAisle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Aisle"/>
         <rdfs:comment>Aisle where a lower priority applies.</rdfs:comment>
         <rdfs:label>AWARE:SecondaryAisle</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#SegmentationModel -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Shelf -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#SegmentationModel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#VisionModel"/>
-        <rdfs:label>A vision model that partitions a digital image into multiple segments (sets of pixels, also known as image objects).</rdfs:label>
-        <rdfs:label>AWARE:SegmentationModel</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Shelf -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Shelf">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#StorageUnit"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Shelf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#StorageUnit"/>
         <rdfs:comment>Storage unit with multiple horizontal compartments.</rdfs:comment>
         <rdfs:label>AWARE:Shelf</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#SpeedLimitZone -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#SpeedLimitZone -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#SpeedLimitZone">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ConstraintZone"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#SpeedLimitZone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ConstraintZone"/>
         <rdfs:comment>A zone within which the speed limit is defined, e.g. a crossing area.</rdfs:comment>
         <rdfs:label>AWARE:SpeedLimitZone</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Stack -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Stack -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Stack">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#StorageUnit"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Stack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#StorageUnit"/>
         <rdfs:comment>Stack of storage containers.</rdfs:comment>
         <rdfs:label>AWARE:Stack</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#StorageUnit -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#StorageUnit -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#StorageUnit">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#StorageUnit">
         <rdfs:subClassOf rdf:resource="http://www.adampease.org/OP/SUMO.owl#Artifact"/>
         <rdfs:comment>Room in which items may be stored.</rdfs:comment>
         <rdfs:label>AWARE:StorageUnit</rdfs:label>
@@ -1246,30 +1236,30 @@ equipped to carry mobile Dollys.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#TemperatureSensor -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#TemperatureSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#TemperatureSensor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ProprioceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ProprioceptiveSensor"/>
         <rdfs:comment>Reports the temperatutre level.</rdfs:comment>
         <rdfs:label>AWARE:TempertatureSensor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#TrackingModel -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#TrackingModel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#TrackingModel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#VisionModel"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#TrackingModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#VisionModel"/>
         <rdfs:comment>A vision model that partitions a digital image into multiple segments (sets of pixels, also known as image objects).</rdfs:comment>
         <rdfs:label>AWARE:SegmentationModel</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Trailer -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Trailer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Trailer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#TransportationUnit"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Trailer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#TransportationUnit"/>
         <rdfs:comment>Unpowered vehicle with one main axle. In most cases a series of trailers is
 attached to a Tugger.</rdfs:comment>
         <rdfs:label>AWARE:Trailer</rdfs:label>
@@ -1277,9 +1267,9 @@ attached to a Tugger.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#TransportationUnit -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#TransportationUnit -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#TransportationUnit">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#TransportationUnit">
         <rdfs:subClassOf rdf:resource="http://www.adampease.org/OP/SUMO.owl#Artifact"/>
         <rdfs:comment>A loadable unit of a vehicle that is used to transport goods.</rdfs:comment>
         <rdfs:label>AWARE:TransportationUnit</rdfs:label>
@@ -1287,10 +1277,10 @@ attached to a Tugger.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Tricycle -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Tricycle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Tricycle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#MannedVehicle"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Tricycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#MannedVehicle"/>
         <rdfs:comment>Any 3-wheel vehicle powered by a motor for Person and equipment
 transportation. It differs to Tugger by its seat for the driver and a bicycle-like handlebar.</rdfs:comment>
         <rdfs:label>AWARE:Tricycle</rdfs:label>
@@ -1298,10 +1288,10 @@ transportation. It differs to Tugger by its seat for the driver and a bicycle-li
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Ttrailer -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Ttrailer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Ttrailer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Trailer"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Ttrailer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Trailer"/>
         <rdfs:comment>Unpowered vehicle with one main axle. In most cases a series of Ttrailers is
 attached to a tugger. It is designed to carry Dollies.</rdfs:comment>
         <rdfs:label>AWARE:Ttrailer</rdfs:label>
@@ -1309,10 +1299,10 @@ attached to a tugger. It is designed to carry Dollies.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Tugger -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Tugger -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Tugger">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#MannedVehicle"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Tugger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#MannedVehicle"/>
         <rdfs:comment>Autonomous/manned towing vehicle, that can pull one or more trailers.
 It differs to a Tricycle by not having a driver’s seat and a car-like driving wheel.</rdfs:comment>
         <rdfs:label>AWARE:Tugger</rdfs:label>
@@ -1320,19 +1310,19 @@ It differs to a Tricycle by not having a driver’s seat and a car-like driving 
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#UltrasonicSensor -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#UltrasonicSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#UltrasonicSensor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#ExteroceptiveSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#UltrasonicSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#ExteroceptiveSensor"/>
         <rdfs:comment>A sensing device for measuring the distance of a target object by emitting ultrasonic sound waves.</rdfs:comment>
         <rdfs:label>AWARE:UltrasonicSensor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#Vehicle -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#Vehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#Vehicle">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#Vehicle">
         <rdfs:subClassOf rdf:resource="http://www.adampease.org/OP/SUMO.owl#Artifact"/>
         <rdfs:comment>A means of carrying or transporting something.</rdfs:comment>
         <rdfs:label>AWARE:Vehicle</rdfs:label>
@@ -1340,9 +1330,9 @@ It differs to a Tricycle by not having a driver’s seat and a car-like driving 
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#VisionModel -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#VisionModel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#VisionModel">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#VisionModel">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
         <rdfs:comment>A processing block that takes uploaded inputs, like images or videos, and predicts or returns pre-learned concepts or labels.</rdfs:comment>
         <rdfs:label>AWARE:VisionModel</rdfs:label>
@@ -1356,8 +1346,8 @@ It differs to a Tricycle by not having a driver’s seat and a car-like driving 
         <rdfs:subClassOf rdf:resource="http://www.adampease.org/OP/SUMO.owl#Abstract"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#hasDecision"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Decision"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#hasDecision"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Decision"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A temporal instant.</rdfs:comment>
@@ -1372,7 +1362,7 @@ It differs to a Tricycle by not having a driver’s seat and a car-like driving 
         <rdfs:subClassOf rdf:resource="http://www.adampease.org/OP/SUMO.owl#Abstract"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#hasTimeStamp"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#hasTimeStamp"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1459,50 +1449,50 @@ It differs to a Tricycle by not having a driver’s seat and a car-like driving 
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#decreaseSpeed -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#decreaseSpeed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#decreaseSpeed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Decision"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#decreaseSpeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Decision"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#increaseSafetyRange -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#increaseSafetyRange -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#increaseSafetyRange">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Decision"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#increaseSafetyRange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Decision"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#left -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#left -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#left">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#AGVdirection"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#left">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#AGVdirection"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#right -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#right -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#right">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#AGVdirection"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#right">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#AGVdirection"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#stop -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#stop -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#stop">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#Decision"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#stop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#Decision"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2020/6/AWARE#straight -->
+    <!-- http://www.semanticweb.org/ontologies/2020/AWARE#straight -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2020/6/AWARE#straight">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2020/6/AWARE#AGVdirection"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2020/AWARE#straight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2020/AWARE#AGVdirection"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
